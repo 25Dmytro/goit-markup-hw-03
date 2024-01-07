@@ -135,7 +135,18 @@ align-items: center;}
 .hero-button-order:hover {background-color: #404BBF;}
 .hero-button-order:focus {background-color: #404BBF;}
 
-.visually-hidden {visibility: hidden;}
+.visually-hidden {display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;}
+
 .section-skills {background: #FFF; padding-top: 120px; padding-bottom: 120px;}
 .container-skills 
 .skills-list {display: flex; gap: 24px;}
@@ -243,8 +254,7 @@ border-top: 0px}
 .footer {background: #2E2F42;
     padding: 100px 0;}
 
-.container-footer {display: flex; 
-    flex-direction: column; 
+.container-footer { 
     }
 
 .footer-logo {color: #4d5ae5;
